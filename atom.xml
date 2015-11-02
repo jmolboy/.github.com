@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://jmolboy.com/"/>
-  <updated>2015-11-02T08:48:59.000Z</updated>
+  <updated>2015-11-02T08:50:24.000Z</updated>
   <id>http://jmolboy.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://jmolboy.com/2015/10/26/beginlearnnode/"/>
     <id>http://jmolboy.com/2015/10/26/beginlearnnode/</id>
     <published>2015-10-25T17:39:47.000Z</published>
-    <updated>2015-11-02T08:48:59.000Z</updated>
-    <content type="html"><![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；<br>但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目数据同步请求队列时，发现请求处理的不及时，这时才想到用node，就决定开始咯…<br><a id="more"></a></p>
+    <updated>2015-11-02T08:50:24.000Z</updated>
+    <content type="html"><![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…<br>因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，这时才想到用node，就决定开始咯…<br><a id="more"></a></p>
 <p><img src="http://7xnu0w.com1.z0.glb.clouddn.com/node.png" alt="Node"></p>
 <h3 id="站点收藏">站点收藏</h3><ul>
 <li><p><a href="https://nodejs.org/]" target="_blank" rel="external">node官网网站</a> 下载安装、看文档、看文档、找源码</p>
@@ -42,7 +42,7 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；<br>但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目数据同步请求队列时，发现请求处理的不及时，这时才想到用node，就决定开始咯…<br>]]>
+    <![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…<br>因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，这时才想到用node，就决定开始咯…<br>]]>
     
     </summary>
     
