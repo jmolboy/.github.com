@@ -14,20 +14,20 @@
     
         <link rel="alternative" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，原因是php在发送请求后一直会在等待接口的响应，响应结束业务才会继续往下走；那么有没有一种方法可以发送完请求，不block在这里，可以继续处理后续的逻辑的技术呢；这时才想到node的非阻塞异步I/O，">
+    <meta name="description" content="其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="开始nodejs">
 <meta property="og:url" content="http://jmolboy.com/2015/10/26/beginlearnnode/index.html">
 <meta property="og:site_name" content="jmol">
-<meta property="og:description" content="其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，原因是php在发送请求后一直会在等待接口的响应，响应结束业务才会继续往下走；那么有没有一种方法可以发送完请求，不block在这里，可以继续处理后续的逻辑的技术呢；这时才想到node的非阻塞异步I/O，">
+<meta property="og:description" content="其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；">
 <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/node.png">
 <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/nodeos.png">
 <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/nodewebkit.jpg">
 <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/logio.png">
-<meta property="og:updated_time" content="2015-11-02T09:56:36.000Z">
+<meta property="og:updated_time" content="2015-11-02T09:59:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开始nodejs">
-<meta name="twitter:description" content="其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，原因是php在发送请求后一直会在等待接口的响应，响应结束业务才会继续往下走；那么有没有一种方法可以发送完请求，不block在这里，可以继续处理后续的逻辑的技术呢；这时才想到node的非阻塞异步I/O，">
+<meta name="twitter:description" content="其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；">
     
     
     
@@ -209,7 +209,7 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，原因是php在发送请求后一直会在等待接口的响应，响应结束业务才会继续往下走；那么有没有一种方法可以发送完请求，不block在这里，可以继续处理后续的逻辑的技术呢；这时才想到node的非阻塞异步I/O，顿时眼前一亮啊…<br><a id="more"></a></p>
+            <p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；<br><a id="more"></a><br>原因是php在发送请求后一直会在等待接口的响应，响应结束业务才会继续往下走；那么有没有一种方法可以发送完请求，不block在这里，可以继续处理后续的逻辑的技术呢；这时才想到node的非阻塞异步I/O，顿时眼前一亮啊…</p>
 <p><img src="http://7xnu0w.com1.z0.glb.clouddn.com/node.png" alt="Node"></p>
 <h3 id="资料集">资料集</h3><ul>
 <li><p><a href="https://nodejs.org/]" target="_blank" rel="external">node官网网站</a> 下载安装、看文档、看文档、找源码</p>
