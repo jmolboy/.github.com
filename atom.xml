@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://jmolboy.com/"/>
-  <updated>2015-10-20T08:06:09.000Z</updated>
+  <updated>2015-11-02T07:56:32.000Z</updated>
   <id>http://jmolboy.com/</id>
   
   <author>
@@ -15,48 +15,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[第一章]]></title>
-    <link href="http://jmolboy.com/2015/10/20/firsttest/"/>
-    <id>http://jmolboy.com/2015/10/20/firsttest/</id>
-    <published>2015-10-20T07:39:47.000Z</published>
-    <updated>2015-10-20T08:06:09.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <title><![CDATA[开始nodejs]]></title>
+    <link href="http://jmolboy.com/2015/10/26/beginlearnnode/"/>
+    <id>http://jmolboy.com/2015/10/26/beginlearnnode/</id>
+    <published>2015-10-25T17:39:47.000Z</published>
+    <updated>2015-11-02T07:56:32.000Z</updated>
+    <content type="html"><![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…<br>因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目数据同步请求队列时，发现请求处理的不及时，这时才想到用node，就决定开始咯…</p>
+<a id="more"></a>
+<h3 id="站点收藏">站点收藏</h3><ul>
+<li><p>node官网网站：<a href="https://nodejs.org/" target="_blank" rel="external">https://nodejs.org/</a></p>
+</li>
+<li><p>node中文社区：<a href="https://cnodejs.org/" target="_blank" rel="external">https://cnodejs.org/</a>  这里有很多技术大牛哦，当然还有他们的分享</p>
+</li>
+<li><p>七天学会NodeJS：<a href="https://github.com/nqdeng/7-days-nodejs" target="_blank" rel="external">https://github.com/nqdeng/7-days-nodejs</a> 很好的node简单介绍</p>
+</li>
+<li><p>node入门：<a href="http://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="external">http://www.nodebeginner.org/index-zh-cn.html</a> 在线书籍</p>
+</li>
+<li><p>google V8引擎：<a href="https://developers.google.com/v8/" target="_blank" rel="external">https://developers.google.com/v8/</a></p>
+</li>
+<li><p>快速搭建 Node.js 开发环境以及加速 npm:<a href="http://fengmk2.com/blog/2014/03/node-env-and-faster-npm.html" target="_blank" rel="external">http://fengmk2.com/blog/2014/03/node-env-and-faster-npm.html</a></p>
+</li>
+<li><p>node.js中文资料导航: <a href="https://github.com/youyudehexie/node123" target="_blank" rel="external">https://github.com/youyudehexie/node123</a></p>
+</li>
+<li><p>nodejs名人堂: <a href="https://github.com/cnodejs/nodeclub/wiki/%E5%90%8D%E4%BA%BA%E5%A0%82" target="_blank" rel="external">https://github.com/cnodejs/nodeclub/wiki/%E5%90%8D%E4%BA%BA%E5%A0%82</a> </p>
+</li>
+</ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    <![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…<br>因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目数据同步请求队列时，发现请求处理的不及时，这时才想到用node，就决定开始咯…</p>]]>
+    
     </summary>
     
-      <category term="intrest" scheme="http://jmolboy.com/tags/intrest/"/>
+      <category term="learning" scheme="http://jmolboy.com/tags/learning/"/>
     
-      <category term="test" scheme="http://jmolboy.com/tags/test/"/>
+      <category term="node" scheme="http://jmolboy.com/tags/node/"/>
     
-      <category term="intrest" scheme="http://jmolboy.com/categories/intrest/"/>
+      <category term="thought" scheme="http://jmolboy.com/tags/thought/"/>
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World Hello]]></title>
-    <link href="http://jmolboy.com/2015/10/02/hello-world/"/>
-    <id>http://jmolboy.com/2015/10/02/hello-world/</id>
-    <published>2015-10-02T07:39:47.000Z</published>
-    <updated>2015-10-20T08:11:07.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
+      <category term="learning" scheme="http://jmolboy.com/categories/learning/"/>
     
   </entry>
   
