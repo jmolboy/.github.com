@@ -4,22 +4,26 @@
     
   <url>
     <loc>http://jmolboy.com/2015/10/26/beginlearnnode/</loc>
-    <lastmod>2015-11-03T08:19:42.000Z</lastmod>
+    <lastmod>2015-11-03T08:22:26.000Z</lastmod>
     <data>
         <display>
         <title>开始nodejs</title>
         <pubTime>2015-10-25T17:39:47.000Z</pubTime>
         
-        <tag>node </tag>
+        <tag>node webkit </tag>
          
         <tag>nodejs </tag>
          
-        <tag>学习Node </tag>
+        <tag>nodeos </tag>
+         
+        <tag>nwjs </tag>
+         
+        <tag>socket.io </tag>
          
          
            
              
-              <breadCrumb title="Nodejs" url="http://jmolboy.com/categories/Nodejs/"/>
+              <breadCrumb title="nodejs" url="http://jmolboy.com/categories/nodejs/"/>
           
         </display>
     </data>
