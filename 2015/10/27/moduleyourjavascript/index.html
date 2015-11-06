@@ -1,26 +1,211 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[jmol]]></title>
-  
-  <link href="/atom.xml" rel="self"/>
-  <link href="http://www.jmolboy.com/"/>
-  <updated>2015-11-06T08:03:38.000Z</updated>
-  <id>http://www.jmolboy.com/</id>
-  
-  <author>
-    <name><![CDATA[Jmol]]></name>
+
+<!DOCTYPE html>
+<html lang="zh-cn">
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[模块化你的javascript]]></title>
-    <link href="http://www.jmolboy.com/2015/10/27/moduleyourjavascript/"/>
-    <id>http://www.jmolboy.com/2015/10/27/moduleyourjavascript/</id>
-    <published>2015-10-27T13:39:47.000Z</published>
-    <updated>2015-11-06T08:03:38.000Z</updated>
-    <content type="html"><![CDATA[<p>随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；<a id="more"></a><br>到web2.0时代利用ajax做异步更新及html5标准api的制定，javascript开始被广泛的关注和应用；在web2.0流行的时代，各种前端库和框架被开发出来，js也从最初的兼容各版本浏览器、表单校验上升到应用开发的级别上；<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/web_js_html_css.jpg" alt=""></p>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="jmol">
+    <title>模块化你的javascript - jmol</title>
+    <meta name="author" content="Jmol">
+    
+        <link rel="icon" href="/assets/images/favicon.ico">
+    
+    
+        <link rel="alternative" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <meta name="description" content="随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="模块化你的javascript">
+<meta property="og:url" content="http://www.jmolboy.com/2015/10/27/moduleyourjavascript/index.html">
+<meta property="og:site_name" content="jmol">
+<meta property="og:description" content="随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；">
+<meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/web_js_html_css.jpg">
+<meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/commonjs_modules.png">
+<meta property="og:updated_time" content="2015-11-06T08:03:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="模块化你的javascript">
+<meta name="twitter:description" content="随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；">
+    
+    
+    
+        <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/avatar.jpg"/>
+    
+    
+        <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/js.png"/>
+        <meta class="swiftype" name="image" data-type="enum" content="http://7xnu0w.com1.z0.glb.clouddn.com/js.png" />
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css">
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+        
+            
+        
+    
+
+<header id="header" data-behavior="3">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="/ ">jmol</a>
+    </h1>
+    
+        
+            <a  class="header-right-picture "
+                href="/#about">
+        
+        
+            <img class="header-picture" src="http://7xnu0w.com1.z0.glb.clouddn.com/avatar.jpg"/>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+
+        
+    
+
+<nav id="sidebar" data-behavior="3">
+    
+        <div class="sidebar-profile">
+            <a href="/#about">
+                    <img class="sidebar-profile-picture" src="http://7xnu0w.com1.z0.glb.clouddn.com/avatar.jpg"/>
+            </a>
+            <span class="sidebar-profile-name">Jmol</span>
+        </div>
+    
+    
+        <ul class="sidebar-buttons">
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/ "
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">首页</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-categories"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">分类</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-tags"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">标签</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-archives"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                    <span class="sidebar-button-desc">归档</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link st-search-show-outputs"
+                         href="/#search"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">搜索</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/#about"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                    <span class="sidebar-button-desc">关于</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+        <ul class="sidebar-buttons">
+        
+    </ul>
+    
+        <ul class="sidebar-buttons">
+        
+    </ul>
+    
+</nav>
+
+            
+            <div id="main" data-behavior="3"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            模块化你的javascript
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" content="Tue Oct 27 2015 21:39:47 GMT+0800">
+	
+		    10月 27, 2015
+    	
+    </time>
+    
+        <span>发布在 </span>
+        
+    <a class="category-link" href="/categories/javascript/">javascript</a>
+
+
+    
+</div>
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <p>随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；<a id="more"></a><br>到web2.0时代利用ajax做异步更新及html5标准api的制定，javascript开始被广泛的关注和应用；在web2.0流行的时代，各种前端库和框架被开发出来，js也从最初的兼容各版本浏览器、表单校验上升到应用开发的级别上；<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/web_js_html_css.jpg" alt=""></p>
 <p>经历了不断的应用和探索，javascript不断被抽象和封装以支持越来越复杂的业务逻辑，从单一的前端交互上升到业务处理；后来nodejs的出现又让javascript可以应用于服务端开发、网络编程，从客户端编程语言跃升到服务端语言；</p>
 <p>事实是javascirpt代码量越来越多了，业务越来越复杂了，各种依赖层次越来越深了，版本越来越不好控制了；那怎么解决呢？答案就是 <strong>模块化</strong> 什么是<a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">模块系统和模块化</a>可参考<a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">https://github.com/seajs/seajs/issues/242</a></p>
 <h2 id="传统的模块化方式">传统的模块化方式</h2><p>传统的处理方式大多包括以下几类：</p>
@@ -96,119 +281,207 @@
 <p>[前端模块化开发的价值] <a href="https://github.com/seajs/seajs/issues/547" target="_blank" rel="external">https://github.com/seajs/seajs/issues/547</a></p>
 <p>[与 RequireJS 的异同]<a href="https://github.com/seajs/seajs/issues/277" target="_blank" rel="external">https://github.com/seajs/seajs/issues/277</a></p>
 <p>[深入浅出Node]作者朴灵&nbsp;<a href="https://github.com/jacksontian" target="_blank" rel="external">https://github.com/jacksontian</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；]]>
+
+            
+                
+
+            
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">标签</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/javascript/">javascript</a> <a class="tag tag--primary tag--small t-link" href="/tags/requirejs/">requirejs</a> <a class="tag tag--primary tag--small t-link" href="/tags/seajs/">seajs</a> <a class="tag tag--primary tag--small t-link" href="/tags/模块化/">模块化</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/26/beginlearnnode/" data-tooltip="开始nodejs">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#comments">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+            <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-moduleyourjavascript" data-title="模块化你的javascript" data-url="http://www.jmolboy.com/2015/10/27/moduleyourjavascript/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:'jmolboy'};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0]
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</section>
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2015 Jmol. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="3">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/26/beginlearnnode/" data-tooltip="开始nodejs">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#comments">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+            
+        </div>
+        <!-- Define author's picture -->
+
+
     
-    </summary>
+        
     
-      <category term="javascript" scheme="http://www.jmolboy.com/tags/javascript/"/>
-    
-      <category term="requirejs" scheme="http://www.jmolboy.com/tags/requirejs/"/>
-    
-      <category term="seajs" scheme="http://www.jmolboy.com/tags/seajs/"/>
-    
-      <category term="模块化" scheme="http://www.jmolboy.com/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
-    
-      <category term="javascript" scheme="http://www.jmolboy.com/categories/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[开始nodejs]]></title>
-    <link href="http://www.jmolboy.com/2015/10/26/beginlearnnode/"/>
-    <id>http://www.jmolboy.com/2015/10/26/beginlearnnode/</id>
-    <published>2015-10-25T17:39:47.000Z</published>
-    <updated>2015-11-05T06:11:14.000Z</updated>
-    <content type="html"><![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；<a id="more"></a>原因是php在发送请求后一直会在等待接口的响应，响应结束业务才会继续往下走；那么有没有一种方法可以发送完请求，不block在这里，可以继续处理后续的逻辑的技术呢；这时才想到node的非阻塞异步I/O，顿时眼前一亮啊…</p>
-<p><img src="http://7xnu0w.com1.z0.glb.clouddn.com/node.png" alt="Node"></p>
-<h2 id="资料集">资料集</h2><ul>
-<li><p><a href="https://nodejs.org/]" target="_blank" rel="external">node官网网站</a> 下载安装、看文档、看文档、找源码</p>
-</li>
-<li><p><a href="http://fengmk2.com/blog/2014/03/node-env-and-faster-npm.html" target="_blank" rel="external">快速搭建 Node.js 开发环境以及加速npm</a></p>
-</li>
-<li><p><a href="https://github.com/nqdeng/7-days-nodejs" target="_blank" rel="external">七天学会NodeJS</a> 很好的node简单介绍</p>
-</li>
-<li><p><a href="http://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="external">node入门</a> 在线书籍</p>
-</li>
-<li><p><a href="https://developers.google.com/v8/" target="_blank" rel="external">google V8引擎</a> 解析nodejs的V8引擎介绍</p>
-</li>
-<li><p><a href="https://github.com/youyudehexie/node123" target="_blank" rel="external">node.js中文资料导航</a></p>
-</li>
-<li><p><a href="https://github.com/cnodejs/nodeclub/wiki/%E5%90%8D%E4%BA%BA%E5%A0%82" target="_blank" rel="external">nodejs名人堂</a> node届的大牛们 </p>
-</li>
-<li><p><a href="https://cnodejs.org/" target="_blank" rel="external">node中文社区</a> 这里有很多技术大牛哦，当然还有他们的分享</p>
-<p><br>     </p>
-</li>
-</ul>
-<h2 id="优秀的开源node项目">优秀的开源node项目</h2><p>Nodejs之所以从2009年问世后如此被大家追捧，除了它的异步I/O(基于事件机制的回调)和体现出的高性能；还有个更重要的原因是它是基于javascript来开发(当然还可以结合C++)，这就降低了学习的门槛，前端开发的童鞋顿时可以借此进入服务器端开发；所以社区也变得异常活跃，各种码农们开始贡献自己的源码，使它成为了<a href="https://github.com/" target="_blank" rel="external">Github</a>排名第二的开源项目；</p>
-<p>目前有好多大型高流量网站采用了它，像Paypal,支付宝,腾讯等；当然除了web，nodejs也被应用在许多方面，基于nodejs诞生了很多让人惊奇的项目，这些项目涉及到应用程序监控、媒体流、远程控制、桌面和移动应用等方面</p>
-<ul>
-<li><p><a href="http://node-os.com/" target="_blank" rel="external">NodeOS</a>       </p>
-<p>  NodeOS是基于linux内核上采用Nodejs开发的操作系统，采用npm进行包管理，目前，Docker和Vagrant都是采用NodeOS的首个版本进行构建的<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/nodeos.png" alt="nodeos"></p>
-</li>
-<li><p><a href="http://nwjs.io/" target="_blank" rel="external">NW(node-webkit)</a></p>
-<p>  Node-Webkit是一个基于Chromium与NodeJS的应用程序运行器，允许开发者使用Web技术编写桌面应用；它是NodeJS与WebKit技术的融合，提供一个跨Windows、Linux平台的客户端应用开发的底层框架；跨平台开发并非易事，其中一种方式便是使用Web技术和Node-Webkit开发桌面应用来代替那些庞大且笨重的开发框架。<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/nodewebkit.jpg" alt="npm"></p>
-</li>
-<li><p><a href="http://logio.org/" target="_blank" rel="external">logio</a></p>
-<p>  一个时时日志监控项目，基于nodejs的Socket.io库<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/logio.png" alt="logio"><br><br></p>
-</li>
-</ul>
-<h2 id="什么都node?">什么都node?</h2><p>说过了node的异步I/O和其高性能，同时它可以运行与服务端，甚至可以作为服务器，那它究竟适合使用在哪些场合呢？(自然不是所有，千万不要脑袋发热，听说Nodejs很好，所以要将项目迁移到node上来)作为一个开发，必须要保持对技术和产品的冷静，盲目的跃进和夸海口最终只会功亏一篑，因为彼只知其外而不知其内；适合使用Node的场景:</p>
-<ul>
-<li>处理高并发</li>
-<li>I/O密集型应用</li>
-<li>大量Ajax请求的应用</li>
-<li>JSON API应用(可以很轻松的写出RestApi)</li>
-<li>单页面应用</li>
-<li>实时通讯(基于Socket.io)</li>
-<li>…</li>
-</ul>
-<p><br></p>
-<p>ps: 已经开始node了，除了惊喜，更多的是充实感和满足感！！！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；]]>
-    
-    </summary>
-    
-      <category term="node webkit" scheme="http://www.jmolboy.com/tags/node-webkit/"/>
-    
-      <category term="nodejs" scheme="http://www.jmolboy.com/tags/nodejs/"/>
-    
-      <category term="nodeos" scheme="http://www.jmolboy.com/tags/nodeos/"/>
-    
-      <category term="nwjs" scheme="http://www.jmolboy.com/tags/nwjs/"/>
-    
-      <category term="socket.io" scheme="http://www.jmolboy.com/tags/socket-io/"/>
-    
-      <category term="nodejs" scheme="http://www.jmolboy.com/categories/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[摘15-10-25]]></title>
-    <link href="http://www.jmolboy.com/2015/10/26/excerpt15-11-04/"/>
-    <id>http://www.jmolboy.com/2015/10/26/excerpt15-11-04/</id>
-    <published>2015-10-25T17:39:47.000Z</published>
-    <updated>2015-11-06T08:06:57.000Z</updated>
-    <content type="html"><![CDATA[<p><br></p>
-<p>很多时候我们放弃，以为不过是一段感情，到了最后，才知道，原来那是一生。</p>
-<hr>
-<p>——《佳期如梦》</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><br></p>
-<p>很多时候我们放弃，以为不过是一段感情，到了最后，才知道，原来那是一生。</p>
-<hr>
-<p>——《佳期如梦》</p>
-]]>
-    </summary>
-    
-      <category term="书摘" scheme="http://www.jmolboy.com/tags/%E4%B9%A6%E6%91%98/"/>
-    
-      <category term="书摘" scheme="http://www.jmolboy.com/categories/%E4%B9%A6%E6%91%98/"/>
-    
-  </entry>
-  
-</feed>
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="http://7xnu0w.com1.z0.glb.clouddn.com/avatar.jpg"/>
+        
+            <h4 id="about-card-name">Jmol</h4>
+        
+            <h5 id="about-card-bio"><p>Time is a bird for ever on the wing</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Software Engineer</p>
+
+            </h5>
+        
+        
+            <h5 id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                BeiJing
+            </h5>
+        
+    </div>
+</div>
+
+        
+<div id="cover" style="background-image:url('http://7xnu0w.com1.z0.glb.clouddn.com/cover2.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/script.min.js" type="text/javascript"></script>
+<!--SCRIPTS END-->
+
+
+    <script type="text/javascript">
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+                (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+            e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','76FNrggKSASvR2yBxCW5','2.0.0');
+    </script>
+
+<!--STYLES END-->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-58121600-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+
+</html>

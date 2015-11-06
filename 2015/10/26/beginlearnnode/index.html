@@ -24,7 +24,7 @@
 <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/nodeos.png">
 <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/nodewebkit.jpg">
 <meta property="og:image" content="http://7xnu0w.com1.z0.glb.clouddn.com/logio.png">
-<meta property="og:updated_time" content="2015-11-03T08:22:26.000Z">
+<meta property="og:updated_time" content="2015-11-05T06:11:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开始nodejs">
 <meta name="twitter:description" content="其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；">
@@ -209,7 +209,7 @@
         <div class="main-content-wrap">
             <p>其实几年前就听说了node，只是当时了解到js可以运行于服务器端，的确赶到很兴奋；但是…因为各种原因，一直从未真正去学习它，更为真实应用过；近来来在做项目处理数据同步请求队列时，发现请求处理的不及时，导致效率如此低；<a id="more"></a>原因是php在发送请求后一直会在等待接口的响应，响应结束业务才会继续往下走；那么有没有一种方法可以发送完请求，不block在这里，可以继续处理后续的逻辑的技术呢；这时才想到node的非阻塞异步I/O，顿时眼前一亮啊…</p>
 <p><img src="http://7xnu0w.com1.z0.glb.clouddn.com/node.png" alt="Node"></p>
-<h3 id="资料集">资料集</h3><ul>
+<h2 id="资料集">资料集</h2><ul>
 <li><p><a href="https://nodejs.org/]" target="_blank" rel="external">node官网网站</a> 下载安装、看文档、看文档、找源码</p>
 </li>
 <li><p><a href="http://fengmk2.com/blog/2014/03/node-env-and-faster-npm.html" target="_blank" rel="external">快速搭建 Node.js 开发环境以及加速npm</a></p>
@@ -228,7 +228,7 @@
 <p><br>     </p>
 </li>
 </ul>
-<h3 id="优秀的开源node项目">优秀的开源node项目</h3><p>Nodejs之所以从2009年问世后如此被大家追捧，除了它的异步I/O(基于事件机制的回调)和体现出的高性能；还有个更重要的原因是它是基于javascript来开发(当然还可以结合C++)，这就降低了学习的门槛，前端开发的童鞋顿时可以借此进入服务器端开发；所以社区也变得异常活跃，各种码农们开始贡献自己的源码，使它成为了<a href="https://github.com/" target="_blank" rel="external">Github</a>排名第二的开源项目；</p>
+<h2 id="优秀的开源node项目">优秀的开源node项目</h2><p>Nodejs之所以从2009年问世后如此被大家追捧，除了它的异步I/O(基于事件机制的回调)和体现出的高性能；还有个更重要的原因是它是基于javascript来开发(当然还可以结合C++)，这就降低了学习的门槛，前端开发的童鞋顿时可以借此进入服务器端开发；所以社区也变得异常活跃，各种码农们开始贡献自己的源码，使它成为了<a href="https://github.com/" target="_blank" rel="external">Github</a>排名第二的开源项目；</p>
 <p>目前有好多大型高流量网站采用了它，像Paypal,支付宝,腾讯等；当然除了web，nodejs也被应用在许多方面，基于nodejs诞生了很多让人惊奇的项目，这些项目涉及到应用程序监控、媒体流、远程控制、桌面和移动应用等方面</p>
 <ul>
 <li><p><a href="http://node-os.com/" target="_blank" rel="external">NodeOS</a>       </p>
@@ -241,7 +241,7 @@
 <p>  一个时时日志监控项目，基于nodejs的Socket.io库<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/logio.png" alt="logio"><br><br></p>
 </li>
 </ul>
-<h3 id="什么都node?">什么都node?</h3><p>说过了node的异步I/O和其高性能，同时它可以运行与服务端，甚至可以作为服务器，那它究竟适合使用在哪些场合呢？(自然不是所有，千万不要脑袋发热，我们老板听说Nodejs很好，所以要将项目迁移到node上来)作为一个开发，必须要保持对技术和产品的冷静，盲目的跃进和夸海口最终只会功亏一篑，因为彼只知其外而不知其内；适合使用Node的场景:</p>
+<h2 id="什么都node?">什么都node?</h2><p>说过了node的异步I/O和其高性能，同时它可以运行与服务端，甚至可以作为服务器，那它究竟适合使用在哪些场合呢？(自然不是所有，千万不要脑袋发热，听说Nodejs很好，所以要将项目迁移到node上来)作为一个开发，必须要保持对技术和产品的冷静，盲目的跃进和夸海口最终只会功亏一篑，因为彼只知其外而不知其内；适合使用Node的场景:</p>
 <ul>
 <li>处理高并发</li>
 <li>I/O密集型应用</li>
@@ -274,7 +274,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/27/moduleyourjavascript/"  data-tooltip="模块化你的javascript">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -282,7 +282,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/26/excerpt15-11-04/" data-tooltip="摘15-10-25">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -348,7 +348,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/27/moduleyourjavascript/"  data-tooltip="模块化你的javascript">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -356,7 +356,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/26/excerpt15-11-04/" data-tooltip="摘15-10-25">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
