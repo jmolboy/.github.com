@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.jmolboy.com/"/>
-  <updated>2015-11-06T08:50:04.000Z</updated>
+  <updated>2015-11-06T08:55:19.000Z</updated>
   <id>http://www.jmolboy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.jmolboy.com/2015/10/27/moduleyourjavascript/"/>
     <id>http://www.jmolboy.com/2015/10/27/moduleyourjavascript/</id>
     <published>2015-10-27T13:39:47.000Z</published>
-    <updated>2015-11-06T08:50:04.000Z</updated>
+    <updated>2015-11-06T08:55:19.000Z</updated>
     <content type="html"><![CDATA[<p>随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；<a id="more"></a>到web2.0时代利用ajax做异步更新及html5标准api的制定，javascript开始被广泛的关注和应用；在web2.0流行的时代，各种前端库和框架被开发出来，javascript也从最初的兼容各版本浏览器、表单校验上升到应用开发的级别上；<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/web_js_html_css.jpg" alt=""></p>
 <p>经历了不断的应用和探索，javascript不断被抽象和封装以支持越来越复杂的业务逻辑，从单一的前端交互上升到业务处理；后来nodejs的出现又让javascript可以应用于服务端开发、网络编程，从客户端编程语言跃升到服务端语言；</p>
 <p>伴随着的是javascirpt代码量越来越多了，业务越来越复杂了，各种依赖层次越来越深了，版本越来越不好控制了；那怎么解决呢？答案就是 <strong>模块化</strong> (什么是<a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">模块系统和模块化</a>可参考<a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">https://github.com/seajs/seajs/issues/242</a>)</p>
@@ -92,6 +92,7 @@
 <h2 id="兼容多种规范">兼容多种规范</h2><p>那么有咩有办法让开发出的模块能同时兼容前后端呢，当然有…但是为了能够前后端保持一致，最好的做法就是将我们的代码放入一个独立的闭包里。以便能同时兼容Nodejs、AMD、CMD以及普通的浏览器环境。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">name,definition</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//检测是否为AMD或CMD</span></span><br><span class="line">    <span class="keyword">var</span> hasDefine=<span class="keyword">typeof</span> define === <span class="string">'function'</span>,</span><br><span class="line">    <span class="comment">//是否为Node</span></span><br><span class="line">    hasExports=<span class="keyword">typeof</span> <span class="built_in">module</span> !== <span class="string">'undefined'</span> &amp;&amp; <span class="built_in">module</span>.exports;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(hasDefine)&#123;</span><br><span class="line">        <span class="comment">//AMD或CMD</span></span><br><span class="line">        define(definition);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(hasExports)&#123;</span><br><span class="line">        <span class="comment">//普通Node模块</span></span><br><span class="line">        <span class="built_in">module</span>.exports=definition();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="comment">//将执行结果挂在window变量中，在浏览器中this指向window对象</span></span><br><span class="line">        <span class="keyword">this</span>[name]=definition();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)(<span class="string">'hello'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> hello=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line">    <span class="comment">//hello.xx=xx</span></span><br><span class="line">    <span class="keyword">return</span> hello;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>(当然这个还可以继续重构)  </p>
+<p><strong>ps:关于seajs的详细应用，后续会详细介绍.</strong></p>
 <h5 id="参考资源">参考资源</h5><p>[CMD 模块定义规范]  <a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">https://github.com/seajs/seajs/issues/242</a></p>
 <p>[前端模块化开发的价值] <a href="https://github.com/seajs/seajs/issues/547" target="_blank" rel="external">https://github.com/seajs/seajs/issues/547</a></p>
 <p>[与 RequireJS 的异同]<a href="https://github.com/seajs/seajs/issues/277" target="_blank" rel="external">https://github.com/seajs/seajs/issues/277</a></p>
