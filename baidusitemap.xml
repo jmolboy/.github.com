@@ -3,6 +3,32 @@
 
     
   <url>
+    <loc>http://www.jmolboy.com/2015/10/27/moduleyourjavascript/</loc>
+    <lastmod>2015-11-06T08:21:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>模块化你的javascript</title>
+        <pubTime>2015-10-27T13:39:47.000Z</pubTime>
+        
+        <tag>javascript </tag>
+         
+        <tag>requirejs </tag>
+         
+        <tag>seajs </tag>
+         
+        <tag>模块化 </tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://www.jmolboy.com/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jmolboy.com/2015/10/23/beginlearnnode/</loc>
     <lastmod>2015-11-06T08:17:35.000Z</lastmod>
     <data>
@@ -44,32 +70,6 @@
            
              
               <breadCrumb title="书摘" url="http://www.jmolboy.com/categories/%E4%B9%A6%E6%91%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jmolboy.com/2015/10/27/moduleyourjavascript/</loc>
-    <lastmod>2015-11-06T08:03:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>模块化你的javascript</title>
-        <pubTime>2015-10-27T13:39:47.000Z</pubTime>
-        
-        <tag>javascript </tag>
-         
-        <tag>requirejs </tag>
-         
-        <tag>seajs </tag>
-         
-        <tag>模块化 </tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://www.jmolboy.com/categories/javascript/"/>
           
         </display>
     </data>

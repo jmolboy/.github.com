@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.jmolboy.com/"/>
-  <updated>2015-11-06T08:03:38.000Z</updated>
+  <updated>2015-11-06T08:21:49.000Z</updated>
   <id>http://www.jmolboy.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://www.jmolboy.com/2015/10/27/moduleyourjavascript/"/>
     <id>http://www.jmolboy.com/2015/10/27/moduleyourjavascript/</id>
     <published>2015-10-27T13:39:47.000Z</published>
-    <updated>2015-11-06T08:03:38.000Z</updated>
-    <content type="html"><![CDATA[<p>随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；<a id="more"></a><br>到web2.0时代利用ajax做异步更新及html5标准api的制定，javascript开始被广泛的关注和应用；在web2.0流行的时代，各种前端库和框架被开发出来，js也从最初的兼容各版本浏览器、表单校验上升到应用开发的级别上；<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/web_js_html_css.jpg" alt=""></p>
+    <updated>2015-11-06T08:21:49.000Z</updated>
+    <content type="html"><![CDATA[<p>随着互联网的飞速发展，用户和企业对web前端的展示和交互要求也越来越高；而在web铁三角(html+css+js)中扮演很重要角色的javascript也在不断的前进；从最初web1.0被用于做前端表单校验和网页动画；<a id="more"></a>到web2.0时代利用ajax做异步更新及html5标准api的制定，javascript开始被广泛的关注和应用；在web2.0流行的时代，各种前端库和框架被开发出来，javascript也从最初的兼容各版本浏览器、表单校验上升到应用开发的级别上；<br><img src="http://7xnu0w.com1.z0.glb.clouddn.com/web_js_html_css.jpg" alt=""></p>
 <p>经历了不断的应用和探索，javascript不断被抽象和封装以支持越来越复杂的业务逻辑，从单一的前端交互上升到业务处理；后来nodejs的出现又让javascript可以应用于服务端开发、网络编程，从客户端编程语言跃升到服务端语言；</p>
 <p>事实是javascirpt代码量越来越多了，业务越来越复杂了，各种依赖层次越来越深了，版本越来越不好控制了；那怎么解决呢？答案就是 <strong>模块化</strong> 什么是<a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">模块系统和模块化</a>可参考<a href="https://github.com/seajs/seajs/issues/242" target="_blank" rel="external">https://github.com/seajs/seajs/issues/242</a></p>
 <h2 id="传统的模块化方式">传统的模块化方式</h2><p>传统的处理方式大多包括以下几类：</p>
