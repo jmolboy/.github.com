@@ -2338,7 +2338,6 @@ blockquote {
   background: rgba(17, 26, 35, 0);
   text-align: center;
   line-height: 100%;
-  overflow: scroll;
   z-index: 30; }
   #about #about-card {
     position: relative;
