@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.jmolboy.com/"/>
-  <updated>2015-11-06T09:03:37.000Z</updated>
+  <updated>2015-11-19T06:37:55.000Z</updated>
   <id>http://www.jmolboy.com/</id>
   
   <author>
@@ -13,6 +13,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[只是不想现在一眼望见几十年后的自己]]></title>
+    <link href="http://www.jmolboy.com/2015/11/19/th15-11-19/"/>
+    <id>http://www.jmolboy.com/2015/11/19/th15-11-19/</id>
+    <published>2015-11-19T05:06:47.000Z</published>
+    <updated>2015-11-19T06:37:55.000Z</updated>
+    <content type="html"><![CDATA[<p>20多岁，异乡，独自漂泊；</p>
+<p>不奢谈梦想；</p>
+<p>拼搏，只是不想现在一眼望见几十年后的自己…<br><a id="more"></a></p>
+<p><img src="http://7xnu0w.com1.z0.glb.clouddn.com/stayinbigcity.jpg" alt="Node"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>20多岁，异乡，独自漂泊；</p>
+<p>不奢谈梦想；</p>
+<p>拼搏，只是不想现在一眼望见几十年后的自己…<br>]]>
+    
+    </summary>
+    
+      <category term="所思所想" scheme="http://www.jmolboy.com/tags/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/"/>
+    
+      <category term="所思所想" scheme="http://www.jmolboy.com/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[模块化你的javascript]]></title>
