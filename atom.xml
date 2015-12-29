@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.jmolboy.com/"/>
-  <updated>2015-12-29T06:47:48.000Z</updated>
+  <updated>2015-12-29T06:49:39.000Z</updated>
   <id>http://www.jmolboy.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://www.jmolboy.com/2015/12/01/mcrypt-extension-on-EI-Capitan/"/>
     <id>http://www.jmolboy.com/2015/12/01/mcrypt-extension-on-EI-Capitan/</id>
     <published>2015-12-01T04:06:47.000Z</published>
-    <updated>2015-12-29T06:47:48.000Z</updated>
-    <content type="html"><![CDATA[<p>mac操作系统升级到10.11.2(OS X EI Capitan)后，系统自带的php也被修改覆盖了；之前安装的php扩展全无法继续使用了；而mcrypt扩展急需使用，可是怎么安装都无法安装成功；编译后执行安装时总是提示[cp: /usr/lib/php/extensions/no-debug-non-zts-20121212/#INST@17000#: Operation not permitted]，困扰了好久。终于找到了问题所在<a id="more"></a></p>
+    <updated>2015-12-29T06:49:39.000Z</updated>
+    <content type="html"><![CDATA[<p>mac操作系统升级到10.11.2(OS X EI Capitan)后，系统自带的php也被修改覆盖了；之前安装的php扩展全无法继续使用了；而mcrypt扩展急需使用，可是怎么安装都无法安装成功；困扰了好久。<a id="more"></a>编译后执行安装时总是提示[cp: /usr/lib/php/extensions/no-debug-non-zts-20121212/#INST@17000#: Operation not permitted]，终于找到了问题所在</p>
 <p>##什么鬼<br>当你进入/usr/lib/php/extensions/目录时你会发现目录根本无法操作(手动拷贝、移动)，使用root在终端也没有权限；可是不可能啊？我已经是root用户了，为什么还不允许；原来是OSX 10.11 El Capitan新添加了一个新的安全机制叫系统完整性保护System Integrity Protection (SIP)，所以对于目录</p>
 <ul>
 <li>/System  </li>
@@ -63,7 +63,7 @@
 <p>再看你的phpinfo()；就会出现mcrypt信息了；<br><a href="http://7xnu0w.com1.z0.glb.clouddn.com/mcrypt.png" target="_blank" rel="external"></a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>mac操作系统升级到10.11.2(OS X EI Capitan)后，系统自带的php也被修改覆盖了；之前安装的php扩展全无法继续使用了；而mcrypt扩展急需使用，可是怎么安装都无法安装成功；编译后执行安装时总是提示[cp: /usr/lib/php/extensions/no-debug-non-zts-20121212/#INST@17000#: Operation not permitted]，困扰了好久。终于找到了问题所在]]>
+    <![CDATA[<p>mac操作系统升级到10.11.2(OS X EI Capitan)后，系统自带的php也被修改覆盖了；之前安装的php扩展全无法继续使用了；而mcrypt扩展急需使用，可是怎么安装都无法安装成功；困扰了好久。]]>
     
     </summary>
     
