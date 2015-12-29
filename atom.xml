@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.jmolboy.com/"/>
-  <updated>2015-11-19T06:45:20.000Z</updated>
+  <updated>2015-12-29T06:47:48.000Z</updated>
   <id>http://www.jmolboy.com/</id>
   
   <author>
@@ -13,6 +13,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[OS X EI Capitan安装mcrypt]]></title>
+    <link href="http://www.jmolboy.com/2015/12/01/mcrypt-extension-on-EI-Capitan/"/>
+    <id>http://www.jmolboy.com/2015/12/01/mcrypt-extension-on-EI-Capitan/</id>
+    <published>2015-12-01T04:06:47.000Z</published>
+    <updated>2015-12-29T06:47:48.000Z</updated>
+    <content type="html"><![CDATA[<p>mac操作系统升级到10.11.2(OS X EI Capitan)后，系统自带的php也被修改覆盖了；之前安装的php扩展全无法继续使用了；而mcrypt扩展急需使用，可是怎么安装都无法安装成功；编译后执行安装时总是提示[cp: /usr/lib/php/extensions/no-debug-non-zts-20121212/#INST@17000#: Operation not permitted]，困扰了好久。终于找到了问题所在<a id="more"></a></p>
+<p>##什么鬼<br>当你进入/usr/lib/php/extensions/目录时你会发现目录根本无法操作(手动拷贝、移动)，使用root在终端也没有权限；可是不可能啊？我已经是root用户了，为什么还不允许；原来是OSX 10.11 El Capitan新添加了一个新的安全机制叫系统完整性保护System Integrity Protection (SIP)，所以对于目录</p>
+<ul>
+<li>/System  </li>
+<li>/sbin</li>
+<li>/usr</li>
+<li>不包含(/usr/local/)</li>
+</ul>
+<p>仅仅供系统使用，其它用户或者程序无法直接使用，而我们的/usr/lib/php/extensions/刚好在受保护范围内</p>
+<p>##禁SIP<br>所以解决方法就是禁掉SIP保护机制，步骤是：</p>
+<ul>
+<li>重启系统</li>
+<li>按住Command + R </li>
+<li>菜单“实用工具” ==&gt;&gt; “终端” ==&gt;&gt; 输入csrutil disable；执行后会输出：Successfully disabled System Integrity Protection. Please restart the machine for the changes to take effect.</li>
+<li>再次重启系统</li>
+</ul>
+<p>禁止掉SIP后，就可以顺利的安装了，当然装完了以后你可以重新打开SIP，方法同上，只是命令是csrutil enable</p>
+<p>##完整安装</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~ ; mkdir mcrypt ; cd mcrypt</span><br></pre></td></tr></table></figure>
+<p>分别下载<br><a href="http://sourceforge.net/projects/mcrypt/files/Libmcrypt/2.5.8/libmcrypt-2.5.8.tar.gz/download" target="_blank" rel="external">libmcrypt2.5.8</a>、<a href="http://php.net/releases/index.php" target="_blank" rel="external">你系统的php版本</a>到mcrypt目录</p>
+<p>解压</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf libmcrypt-2.5.8.tar.gz&#10;tar -zxvf php-5.5.27.tar.gz&#10;rm *.gz</span><br></pre></td></tr></table></figure>
+<p>安装libmcrypt</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd libmcrypt-2.5.8&#10;./configure&#10;make&#10;sudo make install</span><br></pre></td></tr></table></figure>
+<p>安装autoconf</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/mcrypt&#10;curl -O http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz&#10;tar xvfz autoconf-latest.tar.gz&#10;cd autoconf-2.69/&#10;./configure&#10;make&#10;sudo make install</span><br></pre></td></tr></table></figure>
+<p>编译mcrypt的php扩展</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ../php-5.5.27/ext/mcrypt/&#10;/usr/bin/phpize</span><br></pre></td></tr></table></figure>
+<p>上面会输出：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Configuring for:&#10;PHP Api Version: 20121113&#10;Zend Module Api No: 20121212&#10;Zend Extension Api No: 220121212</span><br></pre></td></tr></table></figure>
+<p>接着编译：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure&#10;make&#10;sudo make install</span><br></pre></td></tr></table></figure>
+<p>上面会输出：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Installing shared extensions:  /usr/lib/php/extensions/no-debug-non-zts-20121212/</span><br></pre></td></tr></table></figure>
+<p>如果出现错误（我遇到的）：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp: /usr/lib/php/extensions/no-debug-non-zts-20121212/#INST@17000#: Operation not permitted</span><br></pre></td></tr></table></figure>
+<p>就说明你需要先禁掉SIP（如何禁掉SIP见上面）</p>
+<p>修改/etc/php.ini，增加扩展extension=mcrypt.so</p>
+<p>再重启apache</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl restart</span><br></pre></td></tr></table></figure>
+<p>再看你的phpinfo()；就会出现mcrypt信息了；<br><a href="http://7xnu0w.com1.z0.glb.clouddn.com/mcrypt.png" target="_blank" rel="external"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>mac操作系统升级到10.11.2(OS X EI Capitan)后，系统自带的php也被修改覆盖了；之前安装的php扩展全无法继续使用了；而mcrypt扩展急需使用，可是怎么安装都无法安装成功；编译后执行安装时总是提示[cp: /usr/lib/php/extensions/no-debug-non-zts-20121212/#INST@17000#: Operation not permitted]，困扰了好久。终于找到了问题所在]]>
+    
+    </summary>
+    
+      <category term="mac SIP" scheme="http://www.jmolboy.com/tags/mac-SIP/"/>
+    
+      <category term="mcrypt" scheme="http://www.jmolboy.com/tags/mcrypt/"/>
+    
+      <category term="php" scheme="http://www.jmolboy.com/tags/php/"/>
+    
+      <category term="php扩展" scheme="http://www.jmolboy.com/categories/php%E6%89%A9%E5%B1%95/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[只是不想现在一眼望见几十年后的自己]]></title>
