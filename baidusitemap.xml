@@ -3,6 +3,52 @@
 
     
   <url>
+    <loc>http://www.jmolboy.com/2015/12/23/localnpm/</loc>
+    <lastmod>2016-04-14T06:47:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>搭建本地NPM</title>
+        <pubTime>2015-12-23T11:39:47.000Z</pubTime>
+        
+        <tag>nodejs </tag>
+         
+        <tag>npm </tag>
+         
+         
+           
+             
+              <breadCrumb title="nodejs" url="http://www.jmolboy.com/categories/nodejs/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jmolboy.com/2015/10/25/moduleyourjavascript/</loc>
+    <lastmod>2016-04-14T06:37:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>模块化你的javascript</title>
+        <pubTime>2015-10-25T03:29:47.000Z</pubTime>
+        
+        <tag>coreseek </tag>
+         
+        <tag>sphinx </tag>
+         
+        <tag>搜索 </tag>
+         
+         
+           
+             
+              <breadCrumb title="coreseek" url="http://www.jmolboy.com/categories/coreseek/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jmolboy.com/2015/12/01/mcrypt-extension-on-EI-Capitan/</loc>
     <lastmod>2015-12-29T06:59:16.000Z</lastmod>
     <data>
@@ -56,32 +102,6 @@
            
              
               <breadCrumb title="摘" url="http://www.jmolboy.com/categories/%E6%91%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jmolboy.com/2015/10/27/moduleyourjavascript/</loc>
-    <lastmod>2015-11-06T09:03:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>模块化你的javascript</title>
-        <pubTime>2015-10-27T13:39:47.000Z</pubTime>
-        
-        <tag>javascript </tag>
-         
-        <tag>requirejs </tag>
-         
-        <tag>seajs </tag>
-         
-        <tag>模块化 </tag>
-         
-         
-           
-             
-              <breadCrumb title="javascript" url="http://www.jmolboy.com/categories/javascript/"/>
           
         </display>
     </data>
